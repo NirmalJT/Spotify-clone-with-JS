@@ -1,13 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
     <title>Spotify - Web Player: Music for everyone</title>
-</head>
-<body>
-  <div class="left"></div>
-  <div class="right"></div>
+  </head>
+  <body class="m-1">
+    <div class="main">
+      <nav class="flex space-between item-center ">
+        <img class="invert" src="logo.svg" alt="Spotify logo" width="120px" />
+        <div class="midnav flex">
+          <div class="round">
+            <img class="invert" src="home.svg" alt="home" width="25px" />
+          </div>
+          <div class="search flex">
+            <img class="invert" src="search.svg" alt="search" width="20px" />
+            <input type="search" placeholder="What do you want to play?" />
+            <img class="invert" src="browse.svg" alt="browse" width="20px" />
+          </div>
+        </div>
+        <div class="buttons">
+          <button>Sign in</button>
+          <button>Log in</button>
+        </div>
+      </nav>
+      <div class="container flex">
+        <div class="left">
+          <div class="library flex item-center ">
+            <img class="invert" src="library.svg" alt="library" width="30px" />
+            <p>Your Library</p>
+          </div>
 
-</body>
+          <footer>
+            <div class="flex query">
+              <span>Legal</span>
+              <span>Safety &amp;</span>
+              <span>Privacy Policy</span>
+              <span>Cookies</span>
+              <span>About Ads</span>
+              <span>Accessibility</span>
+            </div>
+          </footer>
+        </div>
+        <div class="right"></div>
+      </div>
+    </div>
+  </body>
 </html>

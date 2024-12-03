@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* color: white; */
+}
+body {
+  background-color: black;
+}
+
+.midnav{
+    justify-content: center;
+    gap: 10px;
+}
+.round{
+    background-color: #1f1f1f;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 55px;   
+    cursor: pointer;
+}
+.round:hover{
+    scale: 1.05;
+    transition: all 51ms ease-in-out;
+}
+
+.search {
+  border-radius: 35px;
+  padding: 7px 25px;
+  border: 2px solid white;
+  background-color: #1f1f1f;
+  gap: 10px;
+}
+.search:hover {
+    border: 2px solid rgb(82, 235, 82);
+}
+.search img{
+    cursor: pointer;
+}
+.search input{
+  background-color: #1f1d1f;
+  padding: 10px 10px;
+  width: 350px;
+  border: none;
+  border-right: 1px solid white;
+  outline: none; 
+}
+.search ::placeholder{
+    color: rgb(133 161 174);
+    font-weight: lighter;
+    font-size: 17px;
+}
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.buttons :nth-child(1) {
+  background-color: black;
+  border: none;
+  color: rgb(147, 144, 144);
+  font-weight: bold;
+  font-size: 17px;
+  cursor: pointer;
+}
+.buttons :nth-child(1):hover {
+  color: rgb(244, 232, 232);
+  scale: 1.05;
+  transition: all 51ms ease-in;
+}
+.buttons :nth-child(2) {
+  border: none;
+  border-radius: 100px;
+  padding: 15px 30px;
+  font-weight: bolder;
+  font-size: 17px;
+  background-color: white;
+  cursor: pointer;
+  color: black;
+}
+.buttons :nth-child(2):hover {
+  scale: 1.05;
+  transition: all 51ms ease-in;
+}
+.container{
+    gap: 15px;
+    margin-top: 15px;
+}
+.left{
+    width: 25vw;
+    background-color:hsl(0deg 0% 7.06%);
+    border-radius: 10px;
+    height: 100vh;
+    color: white;
+    padding: 20px;
+}
+.library{
+    font-weight: bold;
+    font-size: 18px;
+    gap: 10px;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    color: rgb(81, 78, 78);
+}
+.query{
+    width: 304px;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 15px;
+    justify-content: center;
+    
+}
+
+.right{
+    width: 75vw;
+    background-color:hsl(0deg 0% 7.06%);
+    border-radius: 10px;
+    height: 100vh;
+}
+
+
+
