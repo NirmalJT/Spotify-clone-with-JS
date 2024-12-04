@@ -45,7 +45,6 @@ body {
   border-right: 1px solid white;
   outline: none;
   color: white;
-  
 }
 .search ::placeholder {
   color: rgb(133 161 174);
@@ -122,6 +121,9 @@ footer {
   color: white;
   padding: 20px;
 }
+.right h1 {
+  font-weight: bold;
+}
 .playlistContainer {
   display: flex;
   flex-wrap: wrap;
@@ -135,7 +137,12 @@ footer {
   height: 280px;
   position: relative;
   padding: 10px;
-
+  cursor: pointer;
+  background-color: hsl(0, 1%, 16%);
+}
+.card:hover {
+  background-color: #333133;
+  transition: all 90ms ease-in-out;
 }
 .card :nth-child(1) {
   object-fit: contain;
@@ -151,16 +158,24 @@ footer {
   cursor: pointer;
   opacity: 0;
 }
-.card:hover{
-    background-color: #1f1d1f;
-    transition: all 90ms ease-in-out ;
-    
-}
+
 .card:hover .play {
   opacity: 1;
   bottom: 78px;
-  transition: all 90ms ease-in-out ;
+  transition: all 90ms ease-in-out;
 }
-.play:hover{
-    scale: 1.2;
+.play:hover {
+  scale: 1.2;
+}
+.playbar{
+  background-color: rgb(36, 33, 33);
+  border-radius: 10px;
+  height: 100px;
+  width: 70%;
+  left: 430px;
+  position: absolute;
+  bottom: 0;
+}
+.playsong{
+  gap: 10px;
 }
